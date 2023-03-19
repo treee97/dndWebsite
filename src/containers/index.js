@@ -3,10 +3,12 @@ import Header from  './Header/Header';
 import Monsters from './Monsters/Monsters';
 import Spells from './Spells/Spells';
 import Trinkets from './Trinkets/Trinkets';
+import Adventure from './Adventure/Adventure';
 
 
 export{
     Header,
+    Adventure,
     Character,
     Monsters,
     Spells,

@@ -2,10 +2,8 @@ import React from 'react';
 
 import './Spells.css';
 
-const Spells = () => {
-  return (
-    <div>Spells</div>
-  )
-}
+const Spells = () => (
+  <div>Spells</div>
+)
 
 export default Spells
