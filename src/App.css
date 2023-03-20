@@ -1,4 +1,6 @@
-
+.section__padding{
+  padding: 4rem 6rem;
+}
 .flex__center{
   display: flex;
   flex-direction: row;
@@ -15,20 +17,18 @@
   font-size: 4rem;
 }
 .gradient_bg{
-  /* ff 3.6+ */
   background:-moz-radial-gradient(ellipse at 50% 0%, rgba(97, 23, 23, 0.97) 10%, rgba(33, 7, 33, 1) 100%);
-
-  /* safari 5.1+,chrome 10+ */
   background:-webkit-radial-gradient(ellipse at 50% 0%, rgba(97, 23, 23, 0.97) 10%, rgba(33, 7, 33, 1) 100%);
-
-  /* opera 11.10+ */
   background:-o-radial-gradient(ellipse at 50% 0%, rgba(97, 23, 23, 0.97) 10%, rgba(33, 7, 33, 1) 100%);
-
-  /* ie 10+ */
   background:-ms-radial-gradient(ellipse at 50% 0%, rgba(97, 23, 23, 0.97) 10%, rgba(33, 7, 33, 1) 100%);
-
-  /* global 92%+ browsers support */
   background:radial-gradient(ellipse at 50% 0%, rgba(97, 23, 23, 0.97) 10%, rgba(33, 7, 33, 1) 100%);
+
+
+  /* background: url('./assets/saltmarsh.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed; */
 
 }
 /*  background-position: center;

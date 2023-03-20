@@ -12,7 +12,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
 return(
-  <div className='app__navbar'>
+  <nav className='app__navbar'>
 
     <div className="app__navbar-logo">
       <img src={images.logo} alt="dungeons & dragons logo" id='#home' />
@@ -26,6 +26,10 @@ return(
         <li className='p__raleway'><a href="#trinkets">Trinkets</a></li>
        
     </ul>
+
+    <div className="app__navbar-tree">
+      <img src={images.treeWhiteLogo} alt="tree logo" />
+    </div>
     <div className="app__navbar-small">
       <CgMenuGridO color='white' fontSize={27} onClick={() => setToggleMenu(true)}/>
 
@@ -39,7 +43,13 @@ return(
                 <li className='p__raleway'><a href="#monsters">Monsters</a></li>
                 <li className='p__raleway'><a href="#spells">Spells</a></li>
                 <li className='p__raleway'><a href="#trinkets">Trinkets</a></li>
+
+                {/* <div className="app__navbar-small_overlay-links_tree">
+                  <img src={images.treeWhiteLogo} alt="tree logo" />
+                </div> */}
             </ul>
+
+            
 
           </div>
         )
@@ -47,7 +57,7 @@ return(
 
     </div>
 
-  </div>
+  </nav>
   );
 }
 

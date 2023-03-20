@@ -17,7 +17,10 @@ import topLeftBg from '../assets/top_left_bg.png';
 import topRightBg from '../assets/top_right_bg.png';
 import wolfGirl from '../assets/wolf_girl.png';
 import dLogo from '../assets/d_logo.png';
-import redLogo from '../assets/red_logo.png'
+import redLogo from '../assets/red_logo.png';
+import treeBlackLogo from '../assets/treelogoblack.png';
+import treeWhiteLogo from '../assets/treelogowhite.png';
+
 
 export default{
     artificierGirl,
@@ -40,5 +43,7 @@ export default{
     wolfGirl,
     dLogo,
     redLogo,
+    treeBlackLogo,
+    treeWhiteLogo
 };
 

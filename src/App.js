@@ -16,7 +16,7 @@ const App = () => (
     6- Crear SpellCards que nos ayudaran a ver como son los hechizos
     */}
       
-      <Navbar/>
+      {/* <Navbar/> */}
       <Header/>
       <Character/>
       <Monsters/>
