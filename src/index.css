@@ -14,17 +14,23 @@ App.css is only to apply it to app.js */
 }
 
 :root{
-    --heading-font: 'Cormorant Infant', serif;
+    --header-font: 'Cormorant Infant', serif;
     --font: 'Raleway', sans-serif;
 
     --color-white: #fffefc;
+    --color-gray: #cdcdcd;
     --color-header:#1d1d1d;
     --color-black: #0C0C0C;
 }
 
 
-
-/* gradient text? */
+/* --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+.gradient__text{
+	background: var(--gradient-text);
+	background-clip: text;
+	-webkit-background-clop: text;
+	-webkit-text-fill-color: transparent;
+} */
 
 a{
     text-decoration: none;

@@ -6,3 +6,12 @@ iPads, Tablets – 481px — 768px.
 Small screens, laptops – 769px — 1024px. 1050px
 Desktops, large screens – 1025px — 1200px.
 
+
+ background:
+     url(sweettexture.jpg)    /* image */
+     top center / 200px 200px /* position / size */
+     no-repeat                /* repeat */
+     fixed                    /* attachment */
+     padding-box              /* origin */
+     content-box              /* clip */
+     red;                     color

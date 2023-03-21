@@ -1,3 +1,4 @@
+
 .section__padding{
   padding: 4rem 6rem;
 }
@@ -11,30 +12,72 @@
 .p__raleway{
   font-family: var(--font);
   color: var(--color-white);
-  letter-spacing: -0.04em;
+  letter-spacing: 0.04em;
 }
-.heading-text{
+
+.header__cormorant{
+  font-family: var(--header-font);
+  color: var(--color-white);
   font-size: 4rem;
+
 }
+
+.img__bg{
+  background:url('./assets/top_left_bg.png'), radial-gradient(ellipse at 50% 25%, rgba(19, 63, 3, 1) 0%, rgba(3, 50, 25, 1) 48%, rgba(0, 36, 16, 1) 100%);
+  background-position: top left;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+
 .gradient_bg{
-  background:-moz-radial-gradient(ellipse at 50% 0%, rgba(97, 23, 23, 0.97) 10%, rgba(33, 7, 33, 1) 100%);
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(ellipse at 50% 25%, rgba(24, 73, 6, 1) 0%, rgba(3, 56, 28, 1) 47%, rgba(0, 36, 16, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(ellipse at 50% 25%, rgba(24, 73, 6, 1) 0%, rgba(3, 56, 28, 1) 47%, rgba(0, 36, 16, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(ellipse at 50% 25%, rgba(24, 73, 6, 1) 0%, rgba(3, 56, 28, 1) 47%, rgba(0, 36, 16, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(ellipse at 50% 25%, rgba(24, 73, 6, 1) 0%, rgba(3, 56, 28, 1) 47%, rgba(0, 36, 16, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(ellipse at 50% 25%, rgba(24, 73, 6, 1) 0%, rgba(3, 56, 28, 1) 47%, rgba(0, 36, 16, 1) 100%);
+}
+/* 
+.gradient_bg2{
+  background:-moz-radial-gradient(circle at 50% 50%, rgba(90, 15, 0, 1) 5%, rgba(73, 12, 42, 1) 99%);
+  background:-webkit-radial-gradient(circle at 50% 50%, rgba(90, 15, 0, 1) 5%, rgba(73, 12, 42, 1) 99%);
+  background:-o-radial-gradient(circle at 50% 50%, rgba(90, 15, 0, 1) 5%, rgba(73, 12, 42, 1) 99%);
+  background:-ms-radial-gradient(circle at 50% 50%, rgba(90, 15, 0, 1) 5%, rgba(73, 12, 42, 1) 99%);
+  background:radial-gradient(circle at 50% 50%, rgba(90, 15, 0, 1) 5%, rgba(73, 12, 42, 1) 99%);
+} */
+
+  /* background:-moz-radial-gradient(ellipse at 50% 0%, rgba(97, 23, 23, 0.97) 10%, rgba(33, 7, 33, 1) 100%);
   background:-webkit-radial-gradient(ellipse at 50% 0%, rgba(97, 23, 23, 0.97) 10%, rgba(33, 7, 33, 1) 100%);
   background:-o-radial-gradient(ellipse at 50% 0%, rgba(97, 23, 23, 0.97) 10%, rgba(33, 7, 33, 1) 100%);
   background:-ms-radial-gradient(ellipse at 50% 0%, rgba(97, 23, 23, 0.97) 10%, rgba(33, 7, 33, 1) 100%);
-  background:radial-gradient(ellipse at 50% 0%, rgba(97, 23, 23, 0.97) 10%, rgba(33, 7, 33, 1) 100%);
+  background:radial-gradient(ellipse at 50% 0%, rgba(97, 23, 23, 0.97) 10%, rgba(33, 7, 33, 1) 100%); */
 
+/* 
+{
 
-  /* background: url('./assets/saltmarsh.jpeg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: repeat;
-  background-attachment: fixed; */
+    background:-moz-radial-gradient(circle at 50% 50%, rgba(90, 15, 0, 1) 5%, rgba(73, 12, 42, 1) 99%);
+    background:-webkit-radial-gradient(circle at 50% 50%, rgba(90, 15, 0, 1) 5%, rgba(73, 12, 42, 1) 99%);
+    background:-o-radial-gradient(circle at 50% 50%, rgba(90, 15, 0, 1) 5%, rgba(73, 12, 42, 1) 99%);
+    background:-ms-radial-gradient(circle at 50% 50%, rgba(90, 15, 0, 1) 5%, rgba(73, 12, 42, 1) 99%);
+    background:radial-gradient(circle at 50% 50%, rgba(90, 15, 0, 1) 5%, rgba(73, 12, 42, 1) 99%);
 
-}
+} */
+
 /*  background-position: center;
   background-size: cover;
   background-repeat: repeat;
   background-attachment: fixed; */
 
 /*  <a href="https://www.freepik.com/free-photo/solid-concrete-wall-textured-backdrop_17839221.htm#query=black%20texture&position=2&from_view=keyword&track=ais">Image by rawpixel.com</a> on Freepik  !!!!!!!!!!!!!!!!!______BG_ONE*/
+
 /* <a href="https://www.freepik.com/free-photo/clean-black-plaster_1038363.htm?query=black%20texture#from_view=detail_alsolike">Image by kues1</a> on Freepik */

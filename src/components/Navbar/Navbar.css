@@ -4,6 +4,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
+    /* background: var(--color-black); */
+
 }
 .app__navbar-logo{
     display: flex;
@@ -24,10 +26,14 @@
 }
 
 .app__navbar-links li{
-    margin: 0 1rem;
+    font-family: var(--header-font);
+    font-weight: 500;
     font-size: 1.3rem;
     cursor: pointer;
     text-transform: uppercase;
+
+    margin: 0 1rem;
+
 }
 .app__navbar-links li:hover{
     border-bottom: 1px solid white;
@@ -88,8 +94,11 @@ app__navbar-small_overlay{
 
 
 .app__navbar-small_overlay-links li{
-    font-size: 1.6rem;
+    font-family: var(--header-font);
+    font-size: 1.5rem;
     margin: 1rem 2rem 1rem 0;
+    text-transform: uppercase;
+
    
 }
 
