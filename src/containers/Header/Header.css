@@ -1,5 +1,7 @@
 .app__header{
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
     flex-direction: column;
     min-height: 100vh;
 }
@@ -11,6 +13,19 @@
     justify-content: center;
 }
 .app__header-heading h1{
-    margin-top: 4rem;
-    font-size: 5rem;
+    margin: 3rem 0;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-transform: uppercase;    
+}
+
+.app__header-heading p{
+    text-align: center;
+    line-height: 30px;
+    font-size: 21px;
+    font-weight: 500;
+    margin: 1rem 6rem;
+    color: var(--color-burgundy);
 }

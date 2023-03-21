@@ -31,7 +31,7 @@ return(
       <img src={images.treeWhiteLogo} alt="tree logo" />
     </div>
     <div className="app__navbar-small">
-      <CgMenuGridO color='white' fontSize={27} onClick={() => setToggleMenu(true)}/>
+      <CgMenuGridO color='white' fontSize={32} style={{color: 'red'}} onClick={() => setToggleMenu(true)}/>
 
       { toggleMenu && ( 
           <div className="app__navbar-small_overlay ">

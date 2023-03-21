@@ -11,41 +11,38 @@
 
 .p__raleway{
   font-family: var(--font);
-  color: var(--color-white);
   letter-spacing: 0.04em;
 }
 
 .header__cormorant{
   font-family: var(--header-font);
-  color: var(--color-white);
   font-size: 4rem;
 
 }
 
 .img__bg{
-  background:url('./assets/top_left_bg.png'), radial-gradient(ellipse at 50% 25%, rgba(19, 63, 3, 1) 0%, rgba(3, 50, 25, 1) 48%, rgba(0, 36, 16, 1) 100%);
-  background-position: top left;
+
+  background-image: url('./assets/top_left_bg.png'),url('./assets/top_right_bg.png'), radial-gradient(ellipse at 50% 43%, #FFFFFF 0%, #B1B1B1 100%);
+
+  background-position: top left, top right;
   background-repeat: no-repeat;
-  z-index: 2;
+  background-blend-mode: multiply; /* Blend the images with the gradient background */
+
+}
+
+@media screen and (max-width: 1200px){
+  .img__bg{
+    /* background-size: 50% 50%, 50% 50%;  */
+    background-position: top left, top right; /* Keep them in the same positions */
+  }
 }
 
 
 .gradient_bg{
+  background: radial-gradient(ellipse at 50% 43%, #FFFFFF 0%, #B1B1B1 100%);
 
-    /* ff 3.6+ */
-    background:-moz-radial-gradient(ellipse at 50% 25%, rgba(24, 73, 6, 1) 0%, rgba(3, 56, 28, 1) 47%, rgba(0, 36, 16, 1) 100%);
-
-    /* safari 5.1+,chrome 10+ */
-    background:-webkit-radial-gradient(ellipse at 50% 25%, rgba(24, 73, 6, 1) 0%, rgba(3, 56, 28, 1) 47%, rgba(0, 36, 16, 1) 100%);
-
-    /* opera 11.10+ */
-    background:-o-radial-gradient(ellipse at 50% 25%, rgba(24, 73, 6, 1) 0%, rgba(3, 56, 28, 1) 47%, rgba(0, 36, 16, 1) 100%);
-
-    /* ie 10+ */
-    background:-ms-radial-gradient(ellipse at 50% 25%, rgba(24, 73, 6, 1) 0%, rgba(3, 56, 28, 1) 47%, rgba(0, 36, 16, 1) 100%);
-
-    /* global 92%+ browsers support */
-    background:radial-gradient(ellipse at 50% 25%, rgba(24, 73, 6, 1) 0%, rgba(3, 56, 28, 1) 47%, rgba(0, 36, 16, 1) 100%);
+    /* radial-gradient(ellipse at 50% 43%, #FFFFFF 0%, #B1B1B1 100%) */
+    /* radial-gradient(ellipse at 50% 40%, rgba(19, 63, 3, 1) 0%, rgba(3, 50, 25, 1) 48%, rgba(0, 36, 16, 1) 100%) */
 }
 /* 
 .gradient_bg2{
@@ -70,6 +67,14 @@
     background:-o-radial-gradient(circle at 50% 50%, rgba(90, 15, 0, 1) 5%, rgba(73, 12, 42, 1) 99%);
     background:-ms-radial-gradient(circle at 50% 50%, rgba(90, 15, 0, 1) 5%, rgba(73, 12, 42, 1) 99%);
     background:radial-gradient(circle at 50% 50%, rgba(90, 15, 0, 1) 5%, rgba(73, 12, 42, 1) 99%);
+
+    
+    background:-moz-radial-gradient(ellipse at 50% 25%, rgba(24, 73, 6, 1) 0%, rgba(3, 56, 28, 1) 47%, rgba(0, 36, 16, 1) 100%);
+    background:-webkit-radial-gradient(ellipse at 50% 25%, rgba(24, 73, 6, 1) 0%, rgba(3, 56, 28, 1) 47%, rgba(0, 36, 16, 1) 100%);
+
+    background:-o-radial-gradient(ellipse at 50% 25%, rgba(24, 73, 6, 1) 0%, rgba(3, 56, 28, 1) 47%, rgba(0, 36, 16, 1) 100%);
+
+    background:-ms-radial-gradient(ellipse at 50% 25%, rgba(24, 73, 6, 1) 0%, rgba(3, 56, 28, 1) 47%, rgba(0, 36, 16, 1) 100%);
 
 } */
 

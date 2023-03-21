@@ -2,35 +2,58 @@
 like properties for the anchor tag "a". or root variables
 App.css is only to apply it to app.js */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400;500;600;700&display=swap');
+/* 'Cormorant Infant', serif; */
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
 /* https://www.dnd5eapi.co/api/ */
-
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
 }
+/* Dark Red or Burgundy:
+HEX: #7f0000
+RGBA: rgba(127, 0, 0, 1) */
+
+/* Deep Green:
+HEX: #004d00
+RGBA: rgba(0, 77, 0, 1)
+
+Deep Purple:
+HEX: #4b0082
+RGBA: rgba(75, 0, 130, 1)
+
+Charcoal Gray:
+HEX: #333333
+RGBA: rgba(51, 51, 51, 1) */
 
 :root{
-    --header-font: 'Cormorant Infant', serif;
+    --header-font: 'Montserrat', sans-serif;
     --font: 'Raleway', sans-serif;
+
+    --color-burgundy: #7f0000;
+    --color-deep-green: #004d00;
+    --color-deep-purple: #4b0082;
+    --color-charcoal-gray: #333;
 
     --color-white: #fffefc;
     --color-gray: #cdcdcd;
     --color-header:#1d1d1d;
     --color-black: #0C0C0C;
+    --gradient-text: linear-gradient(90deg, var(--color-burgundy)18%,  var(--color-deep-purple) 100%);
 }
-
-
-/* --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
 .gradient__text{
 	background: var(--gradient-text);
 	background-clip: text;
 	-webkit-background-clop: text;
 	-webkit-text-fill-color: transparent;
-} */
+}
+
+
 
 a{
     text-decoration: none;

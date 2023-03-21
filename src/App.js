@@ -17,9 +17,9 @@ const App = () => (
     */}
       
       {/* <Navbar/> */}
-      <div className=' img__bg img2__bg'>
-				<Navbar />
-				<Header />
+      <div className=' img__bg gradient__bg'>
+          <Navbar />
+          <Header />
 			</div>
       <Character/>
       <Monsters/>
