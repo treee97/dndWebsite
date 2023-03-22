@@ -15,3 +15,9 @@ Desktops, large screens – 1025px — 1200px.
      padding-box              /* origin */
      content-box              /* clip */
      red;                     color
+
+
+     Dungeons & Dragons 5e edition is played by about 9.5 million people actively. 
+     But this only mentions D&D 5e tabletop players. 
+     What about D&D players who play D&D online or through virtual tabletops like Roll20 or Fantasy Grounds? 
+     71000 players 76k games

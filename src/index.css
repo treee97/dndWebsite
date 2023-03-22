@@ -44,12 +44,14 @@ RGBA: rgba(51, 51, 51, 1) */
     --color-gray: #cdcdcd;
     --color-header:#1d1d1d;
     --color-black: #0C0C0C;
-    --gradient-text: linear-gradient(90deg, var(--color-burgundy)18%,  var(--color-deep-purple) 100%);
+    --gradient-text: linear-gradient(0deg, rgba(56, 41, 45, 1) 9%, rgba(190, 0, 82, 1) 100%);
+
+    /* linear-gradient(90deg, var(--color-burgundy)18%,  var(--color-deep-purple) 100%); */
 }
 .gradient__text{
 	background: var(--gradient-text);
 	background-clip: text;
-	-webkit-background-clop: text;
+	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
