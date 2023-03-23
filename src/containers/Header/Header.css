@@ -44,6 +44,12 @@
     }
     .app__header-heading p{
         font-size: 18px;
+        margin: 1rem 4rem;
+
+    }
+
+    .section__padding{
+        padding: 2rem 3rem;
     }
 
 }
@@ -54,9 +60,14 @@
     }
     .app__header-heading p{
         font-size: 16px;
+        margin: 1rem 2rem;
     }
+}
 
-    .app__header-heading_button{
-        
+@media  screen and (max-width: 650px){
+    /* .section__padding{
+        padding: 2rem 3rem;
+    } */
+    .app__header-heading p{
     }
 }

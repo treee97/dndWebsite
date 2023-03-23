@@ -4,16 +4,16 @@
     align-items: center;
     flex-direction: row;
     border-radius: 8px;
-    background: #3333339d;
+    background: var(--gradient-bg);
     color: var(--color-white);
-
-    padding: 8px 1.5rem;
+    /* #3333339d */
+    padding: 8px 1rem;
     backdrop-filter: blur(10px);
 
 }
 
-.app__cta-info{
-   font-size: 21px;
+.app__cta-info, .app__cta button{
+   padding: 1rem 2rem;
 
 }
 .app__cta button{
@@ -22,14 +22,16 @@
     justify-content: space-between;
     outline: none;
     border: none;
-
-    padding: 1rem 2rem;
+    background: rgba(255, 0, 0, 1);
     border-radius: 8px;
-    margin: 1rem;
 
+    color: var(--color-white);
     font-size: 1rem;
     font-family: var(--header-font);
     cursor: pointer;
+}
+.app__cta button:hover{
+    background: rgb(163, 1, 1);
 }
 
 @media screen and (max-width: 1050px) {
@@ -38,5 +40,7 @@
     }
 }
 @media screen and (max-width: 768px) {
-
+    .app__cta-info, .app__cta button{
+        padding: 12px 1rem;
+    }
 }
