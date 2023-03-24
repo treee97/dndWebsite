@@ -1,5 +1,4 @@
 import React from 'react';
-import images from '../../constants/images';
 import { Cta } from '../../components';
 import './Header.css';
 
