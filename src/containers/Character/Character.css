@@ -1,0 +1,29 @@
+.app__character{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.app__character-header{
+    display: flex;
+    flex-direction: column;
+}
+.app__character-header-title{
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.app__character-img{
+    display: flex;
+    justify-content: left;
+}
+
+.app__character-img img{
+  max-width: 80%;
+  max-height: 100%;
+}
+
+
+

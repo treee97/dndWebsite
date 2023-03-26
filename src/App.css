@@ -31,6 +31,13 @@
 
 }
 
+.black__bg{
+  background: url('./assets/bg_one.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media screen and (max-width: 1200px){
   .img__bg{
     /* background-size: 50% 50%, 50% 50%;  */
