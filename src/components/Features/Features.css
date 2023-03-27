@@ -1,0 +1,47 @@
+.app__feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #aaa;
+    padding: 18px;
+    width: 15%;
+    border-radius: 8px;
+}
+.app__feature-number, .app__feature-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app__feature-number p{
+    font-family: var(--header-font);
+    font-weight: 500;
+    font-size: 48px;
+    color: var(--color-white);
+}
+
+.app__feature-dashline{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.app__feature-dashline div{
+    width: 33%;
+    height: 1px;
+    background-color: aliceblue;
+}
+
+.app__feature-dashline p{
+    font-size: 1.4rem;
+    color: var(--color-white);
+
+    /* background-color: red; looks like shit */
+}
+
+.app__feature-name p{
+    color: var(--color-white);
+    font-size: 1.2rem;
+    
+} 

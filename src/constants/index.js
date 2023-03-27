@@ -1,8 +1,8 @@
 import images from './images';
+import data from './data';
 
 
-
-export default {
-    images
-    
+export{
+    images,
+    data
 }
