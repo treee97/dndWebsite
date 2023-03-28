@@ -17,9 +17,6 @@ const Features = ({number, title, dice, text}) => {
         <div className="app__feature-name">
             <p>{title}</p>
         </div>
-        {/* <div className="app__feature-text">
-            <p>{text}</p>
-        </div> */}
     </div>
   )
 }

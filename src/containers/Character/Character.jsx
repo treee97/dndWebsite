@@ -22,15 +22,13 @@ const Character = () => (
         <div className="app__character_content-info">
           <ul className='p__raleway'>
           {data.dndbase.map( (card, index) => (
-              <Features key={card.title + index} number={card.number} title={card.name} dice={card.dice} />
-          )         
-          )}
+              <li><Features key={card.title + index} number={card.number} title={card.name} dice={card.dice} /></li>
+          ))};
           </ul>
         </div>
       </div>
       
     </div>
   )
-  // in what file would you do an API call in a react folder structure? right now i have a folder named api and inside there's a .jsx file called apiCall. Is that good practice?
 
 export default Character

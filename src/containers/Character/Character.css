@@ -14,12 +14,11 @@
 .app__character_content-header{
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;    
     align-items: flex-start;
     justify-content: center;
 }
 .app__character_content-header h2{
-    margin-bottom: 2rem;
+    margin: 4rem 0 3rem 0;
 }
 .app__character_content-header p{
     color: var(--color-white);
@@ -42,10 +41,9 @@
   max-height: 100%;
 }
 .app__character_content-info ul{
+    margin-top: 4rem;
     display: flex;
     flex-wrap: wrap;
-    align-items: normal;
-    justify-content: space-between;
 }
 
 

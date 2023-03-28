@@ -9,7 +9,7 @@ const dndbase = [
         text: "Available to choose"
     },
     {
-        number: 12,
+        number: 9,
         name: "Races",
         dice: <GiInvertedDice2/>,
         text: "And more than .. in all the addons"
