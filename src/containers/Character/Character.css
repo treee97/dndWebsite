@@ -18,7 +18,9 @@
     justify-content: center;
 }
 .app__character_content-header h2{
+
     margin: 4rem 0 3rem 0;
+
 }
 .app__character_content-header p{
     color: var(--color-white);
@@ -37,14 +39,40 @@
 }
 
 .app__character-img img{
-  max-width: 80%;
-  max-height: 100%;
+  max-width: 100%;
+  height: auto;
 }
-.app__character_content-info ul{
+.app__character_content-info{
     margin-top: 4rem;
     display: flex;
     flex-wrap: wrap;
 }
 
 
-
+@media  screen and (max-width: 1280px) {
+    .app__character_content-header h2{
+        font-size: 48px;
+        margin: 2rem 0 1.5rem 0;
+    
+    }
+    .app__character_content-header p{
+        font-size: 18px;
+    
+        margin-bottom: 1.5rem;
+    }
+}
+@media  screen and (max-width: 1024px){
+    .app__character{
+        flex-direction: column;
+    }
+    .app__character-img{
+        align-items: center;
+        justify-content: center;
+        order: 2;
+    }
+    .app__character-img img{
+        max-width: 50%;
+        height: auto;
+    }
+    /* We could display it none and send it back as bacground!!!! MUST DO WILL LOOK NICE BELIEVE IN YOUR SKILLS FELLA! */
+}

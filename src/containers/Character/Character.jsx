@@ -19,12 +19,10 @@ const Character = () => (
           <p className="p__raleway">With hundreds of builds and customization you can get your unique hero. The official game already includes these</p>
         </div>
 
-        <div className="app__character_content-info">
-          <ul className='p__raleway'>
+        <div className="app__character_content-info p__raleway">
           {data.dndbase.map( (card, index) => (
-              <li><Features key={card.title + index} number={card.number} title={card.name} dice={card.dice} /></li>
+              <Features key={card.title + index} number={card.number} title={card.name} dice={card.dice} />
           ))};
-          </ul>
         </div>
       </div>
       
