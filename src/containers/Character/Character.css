@@ -45,34 +45,60 @@
 .app__character_content-info{
     margin-top: 4rem;
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
 }
+/* ====================QUERIES======================= */
 
+@media screen and (max-width: 1500px){
+    .app__character_content-info{
+        margin-top: 2rem;
+    }
+
+}
 
 @media  screen and (max-width: 1280px) {
     .app__character_content-header h2{
-        font-size: 48px;
+        font-size: 56px;
         margin: 2rem 0 1.5rem 0;
     
     }
     .app__character_content-header p{
-        font-size: 18px;
-    
+        text-shadow: 0px 0px 3px #000;
         margin-bottom: 1.5rem;
     }
 }
-@media  screen and (max-width: 1024px){
+@media screen and (max-width: 1024px){
     .app__character{
         flex-direction: column;
     }
+    .black__bg{
+        background:  url('../../assets/humanoid_puma.png'), url('../../assets/bg_one.jpg');
+        background-position: left, center;
+        background-size: 90%, cover;
+        background-repeat: no-repeat, no-repeat;
+      }
     .app__character-img{
-        align-items: center;
-        justify-content: center;
-        order: 2;
+        display: none;
+      
     }
-    .app__character-img img{
-        max-width: 50%;
-        height: auto;
+}
+@media screen and (max-width: 768px){
+    .app__character_content-info{
+        display: flex;
+        flex-direction: column;
     }
-    /* We could display it none and send it back as bacground!!!! MUST DO WILL LOOK NICE BELIEVE IN YOUR SKILLS FELLA! */
+    /* las features aparecen en columna. No tocar nada mas y solo trabajar en la media query del componente Features */
+}
+@media screen and (max-width: 480px){
+    .app__character_content-header h2{
+        font-size: 42px;
+        margin: 1rem 0;
+    
+    }
+    .app__character_content-header p{
+        text-shadow: 0px 0px 3px #000;
+        margin-bottom: 1.5rem;
+        font-size: 16px;
+    }
 }

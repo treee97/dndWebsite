@@ -3,7 +3,7 @@ import { Cta } from '../../components';
 import './Header.css';
 
 const Header = () => (
-    <div className='app__header section__padding'>
+    <div className='app__header section__padding' id='adventure'>
       {/* <img src={images.topRightBg} alt="" /> */}
       <div className="app__header-heading">
         <h1 className="header__cormorant gradient__text">The Adventure Begins Now</h1>

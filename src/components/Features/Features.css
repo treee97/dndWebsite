@@ -11,11 +11,7 @@
     cursor: pointer;
     background: var(--gradient-bg);
 }
-/* .app__feature-number, .app__feature-name{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
+
 .app__feature-number p{
     font-family: var(--header-font);
     font-weight: 500;
@@ -51,6 +47,29 @@
 
 @media screen and (max-width: 1024px){
     .app__feature{
-        flex: 1;
+        /* flex: 1; */
+        width: 30%;
+
+    }
+}
+
+@media screen and (max-width: 768px){
+    .app__feature{
+        width: 100%;
+        flex-direction: row;
+    }
+    .app__feature-number p{
+        font-size: 2rem;
+    }
+    .app__feature-dashline{
+        flex-direction: column;
+    }
+    .app__feature-dashline div{
+        display: none;
+    }
+}
+@media screen and (max-width: 480px){
+    .app__feature-number p{
+        font-size: 1.5rem;
     }
 }

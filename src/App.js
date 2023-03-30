@@ -25,7 +25,7 @@ const App = () => (
       <Monsters/>
       <Spells/>
       <Trinkets/>
-      <p>lorem lorem  Whereas disregard and contempt for human rights have resulted Blau valder this is the fontsize everyone is talking abot nowadays Truly a Masterpiece a Hidden Treasure worth of the curious ones. </p>
+      {/* <p>lorem lorem  Whereas disregard and contempt for human rights have resulted Blau valder this is the fontsize everyone is talking abot nowadays Truly a Masterpiece a Hidden Treasure worth of the curious ones. </p> */}
     </div>
 );
 

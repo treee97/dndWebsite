@@ -6,7 +6,7 @@ import './Character.css';
 import { data } from '../../constants';
 
 const Character = () => (
-    <div className="app__character section__padding black__bg">
+    <div className="app__character section__padding black__bg" id='characters'>
 
       <div className="app__character-img">
         <img src={images.puma} alt="character" />
