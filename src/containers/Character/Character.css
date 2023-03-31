@@ -52,7 +52,7 @@
 
 @media screen and (max-width: 1500px){
     .app__character_content-info{
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
 }
@@ -92,13 +92,13 @@
 }
 @media screen and (max-width: 480px){
     .app__character_content-header h2{
-        font-size: 42px;
+        font-size: 40px;
         margin: 1rem 0;
     
     }
     .app__character_content-header p{
         text-shadow: 0px 0px 3px #000;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
         font-size: 16px;
     }
 }

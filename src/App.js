@@ -3,6 +3,18 @@ import { Header, Character, Monsters, Spells, Trinkets } from './containers';
 import { Navbar } from './components';
 const App = () => (
     <div>
+      <div className=' img__bg gradient__bg'>
+          <Navbar />
+          <Header />
+			</div>
+      <Character/>
+      <Monsters/>
+      <Spells/>
+      <Trinkets/>
+    </div>
+);
+
+export default App;
 
 {/* API el focus de la pagina? toda la info sale de la API? Barbarian class.. Trinketss */}
 {/* 1- Estilos generales en index.
@@ -15,18 +27,3 @@ const App = () => (
     5- API CALL 
     6- Crear SpellCards que nos ayudaran a ver como son los hechizos
     */}
-      
-      {/* <Navbar/> */}
-      <div className=' img__bg gradient__bg'>
-          <Navbar />
-          <Header />
-			</div>
-      <Character/>
-      <Monsters/>
-      <Spells/>
-      <Trinkets/>
-      {/* <p>lorem lorem  Whereas disregard and contempt for human rights have resulted Blau valder this is the fontsize everyone is talking abot nowadays Truly a Masterpiece a Hidden Treasure worth of the curious ones. </p> */}
-    </div>
-);
-
-export default App;
