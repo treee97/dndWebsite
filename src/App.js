@@ -1,6 +1,6 @@
 import './App.css';
-import { Header, Character, Monsters, Spells, Trinkets } from './containers';
-import { Navbar } from './components';
+import { Header, Character, Monsters, Spells, Trinkets} from './containers';
+import { Navbar, MonstersCall } from './components';
 const App = () => (
     <div>
       <div className=' img__bg gradient__bg'>
@@ -11,6 +11,7 @@ const App = () => (
       <Monsters/>
       <Spells/>
       <Trinkets/>
+      <MonstersCall/>
     </div>
 );
 
