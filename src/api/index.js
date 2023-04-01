@@ -1,4 +1,4 @@
-import { getMonsters } from "./APIcall";
+import { getMonsters } from "./MonsterCall";
 
 export{
     getMonsters

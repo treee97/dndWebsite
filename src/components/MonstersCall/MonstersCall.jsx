@@ -19,9 +19,15 @@ const MonstersCall = () => {
     <div>
         <ul>
             {
-                monsters.map((monsterData) => (
-                    <li key={monsterData.index}>{monsterData.name}</li>
-                ))
+                monsters.map((monsterData) => {
+                      console.log(monsterData); 
+                   return ( <div key={monsterData.index}>
+                        <p>Name:{monsterData.name}</p>
+                        <p>HitPoints:{monsterData.index}</p>
+                        <p>Types:{monsterData.target.type}</p>
+                    </div>
+                   )
+})
             }
         </ul>
     </div>
