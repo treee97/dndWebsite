@@ -7,35 +7,47 @@ const MonstersCall = () => {
     const [monsters, setMonsters] = useState([]);
 
     useEffect(() => {
-        const fetchData = async () => {
-            const data = await getMonsters();
-            setMonsters(data);  
-        };
-        fetchData();
+        const getRandomMonsters = async () => {
+            const randomMonsters = await getMonsters();
+            setMonsters(randomMonsters);
+        }
+    
+        getRandomMonsters();
     }, []);
 
 
-  return (
-    <div>
-        <ul>
-            {
-                monsters.map((monsterData) => {
-                      console.log(monsterData); 
-                   return ( <div key={monsterData.index}>
-                        <p>Name:{monsterData.name}</p>
-                        <p>HitPoints:{monsterData.index}</p>
-                        <p>Types:{monsterData.target.type}</p>
-                    </div>
-                   )
-})
-            }
-        </ul>
-    </div>
-  );
+    return (
+        <div>
+          <h1>Random Monsters</h1>
+          <ul>
+            {monsters.map((monster) => (
+              <li key={monster.index}>
+                <h2>{monster.name}</h2>
+                <p>Size: {monster.size}</p>
+                <p>Type: {monster.type}</p>
+                <p>Alignment: {monster.alignment}</p>
+                <p>AC:{monster.armor_class[0].type}</p>
+                <p>AC:{monster.armor_class[0].value}</p>
+                <p>HP: {monster.hit_points}</p>
+
+              </li>
+            ))}
+          </ul>
+        </div>
+      );
+
+
 }
 
 export default MonstersCall;
 
+
+    // everything inside useEffect will be executed every time our application renders.
+    // The code inside useEffect only will run when the options inside change. i have 3 buttons and posts, user, comments. the button posts is set by default. if i click the others the code inside will be affected. but if the button is in posts and i click it again it wont change anything but there has been no change.
+
+
+
+    
 // Certainly! Here's a step-by-step breakdown of the Classes component in classes.js:
 
 // import React, { useEffect, useState } from 'react'; - This imports the React library and the useEffect and useState hooks.
