@@ -15,7 +15,7 @@ const randomMonsters = [];
 while (randomMonsters.length < 4) {
 // mientras que el tamaño del array sea menor que 4, que haga lo siguiente
 const index = Math.floor(Math.random() * data.results.length);
-// variable 𝗶𝗻𝗱𝗲𝘅 que escogera un numero ( o item ) random entre el 0 y la cantidad de los items dentro de ⁡⁣⁢⁣𝘂𝗿𝗹/𝗺𝗼𝗻𝘀𝘁𝗲𝗿𝘀 (𝗱𝗮𝘁𝗮.𝗿𝗲𝘀𝘂𝗹𝘁𝘀⁡) 4 veces hasta que el parametro del while se cumpla; (0 y 334 monstruos registrados.)
+// variable 𝗶𝗻𝗱𝗲𝘅 que escojera un numero ( o item ) random entre el 0 y la cantidad de los items dentro de ⁡⁣⁢⁣𝘂𝗿𝗹/𝗺𝗼𝗻𝘀𝘁𝗲𝗿𝘀 (𝗱𝗮𝘁𝗮.𝗿𝗲𝘀𝘂𝗹𝘁𝘀⁡) 4 veces hasta que el parametro del while se cumpla; (0 y 334 monstruos registrados.)
 const monsterUrl = data.results[index].url;
 // variable monsterUrl que utiliza la variable index y guarda la propiedad "url" de cada uno de los monstruos cogidos
 const monsterResponse = await fetch(`https://www.dnd5eapi.co${monsterUrl}`);

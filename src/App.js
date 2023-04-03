@@ -11,7 +11,6 @@ const App = () => (
       <Monsters/>
       <Spells/>
       <Trinkets/>
-      <MonstersCall/>
     </div>
 );
 

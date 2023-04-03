@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from "react";
 
 import { getMonsters } from '../../api';
+import './MonstersCall.css';
 
 const MonstersCall = () => {
     const [monsters, setMonsters] = useState([]);
@@ -17,24 +18,54 @@ const MonstersCall = () => {
 
 
     return (
-        <div>
-          <h1>Random Monsters</h1>
-          <ul>
+          <ul className='app__monster'>
             {monsters.map((monster) => (
-              <li key={monster.index}>
+              <li style={{border: '1px solid green'}} key={monster.index}>
                 <h2>{monster.name}</h2>
-                <p>Size: {monster.size}</p>
-                <p>Type: {monster.type}</p>
-                <p>Alignment: {monster.alignment}</p>
-                <p>AC:{monster.armor_class[0].type}</p>
-                <p>AC:{monster.armor_class[0].value}</p>
-                <p>HP: {monster.hit_points}</p>
-
+                <p className='app__monster-info'>{monster.size} {monster.type}, {monster.alignment}</p>
+                <div />
+                <p>Armor Class:{monster.armor_class[0].value}</p>
+                <p>HitPoints: {monster.hit_points} ({monster.hit_points_roll})</p>
+                <p>speed: {monster.speed.walk}</p>
+                <div />
+                <div className="app__monster-stats">
+                  <div>
+                    <p>STR</p>
+                    <p>{monster.strength}</p>
+                  </div>
+                  <div>
+                    <p>DEX</p>
+                    <p>{monster.dexterity}</p>
+                  </div><div>
+                    <p>CON</p>
+                    <p>{monster.constitution}</p>
+                  </div><div>
+                    <p>INT</p>
+                    <p>{monster.intelligence}</p>
+                  </div><div>
+                    <p>WIS</p>
+                    <p>{monster.wisdom}</p>
+                  </div><div>
+                    <p>CHA</p>
+                    <p>{monster.charisma}</p>
+                  </div>
+                </div>
+                {/* <div className="app__monster-img">
+                  <img src={`https://www.dnd5eapi.co${monster.image}`} alt="monster_image" />
+                  <p>{monster.image} eaaw</p>
+                </div>  There arent images for everyone*/}
               </li>
             ))}
           </ul>
-        </div>
       );
+      // name,
+      // size + type, alignment
+      // --------
+      // armor class
+      // hitpoints (hit_points_roll)
+      // speed:
+      // str dex cont int wis cha
+      // description.
 
 
 }

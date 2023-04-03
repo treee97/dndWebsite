@@ -1,10 +1,12 @@
 import React from 'react';
-
+import { MonstersCall } from '../../components';
 import './Monsters.css';
 
 const Monsters = () => (
   
-  <div>Monsters</div>
+  <div>
+    <MonstersCall />
+  </div>
 
 )
 
