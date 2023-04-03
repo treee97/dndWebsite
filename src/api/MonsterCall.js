@@ -15,6 +15,7 @@ export const getMonsters = async () =>{
     while (randomMonsters.length < 4) {
       const index = Math.floor(Math.random() * data.results.length);
       const monsterUrl = data.results[index].url;
+      console.log(data.results[index])
       const monsterResponse = await fetch(`https://www.dnd5eapi.co${monsterUrl}`);
       const monsterData = await monsterResponse.json();
 
@@ -36,7 +37,7 @@ export const getMonsters = async () =>{
 
 
 
-
+// ⁡⁣⁣⁢ESTO ES TODO EN UN MISMO ARCHIV⁡⁣⁣⁢O⁡⁡. ⁡⁢⁣⁣INCLUIDO LO DE COMPONENT⁡⁡ ⁡⁢⁣⁢​‌‍‌𝗡𝗢 𝗕𝗢𝗥𝗥𝗔𝗥​⁡
 
 // const MonsterList = () => {
 //   const [monsters, setMonsters] = useState([]);
