@@ -1,0 +1,8 @@
+.app__monster{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.app__monster-header{
+    margin-bottom: 2rem;
+}

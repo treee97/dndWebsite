@@ -18,17 +18,17 @@ const MonstersCall = () => {
 
 
     return (
-          <ul className='app__monster'>
+          <ul className='app__monster_card'>
             {monsters.map((monster) => (
-              <li style={{border: '1px solid green'}} key={monster.index}>
+              <li key={monster.index}>
                 <h2>{monster.name}</h2>
-                <p className='app__monster-info'>{monster.size} {monster.type}, {monster.alignment}</p>
-                <div />
+                <p className='app__monster_card-info'>{monster.size} {monster.type}, {monster.alignment}</p>
+                <div className='app__monster-card_dashline'/>
                 <p>Armor Class:{monster.armor_class[0].value}</p>
                 <p>HitPoints: {monster.hit_points} ({monster.hit_points_roll})</p>
                 <p>speed: {monster.speed.walk}</p>
-                <div />
-                <div className="app__monster-stats">
+                <div className='app__monster-card_dashline'/>
+                <div className="app__monster_card-stats">
                   <div>
                     <p>STR</p>
                     <p>{monster.strength}</p>
@@ -50,6 +50,8 @@ const MonstersCall = () => {
                     <p>{monster.charisma}</p>
                   </div>
                 </div>
+                {/* <div className='app__monster-card_dashline'/> */}
+
                 {/* <div className="app__monster-img">
                   <img src={`https://www.dnd5eapi.co${monster.image}`} alt="monster_image" />
                   <p>{monster.image} eaaw</p>

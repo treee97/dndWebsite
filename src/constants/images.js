@@ -20,6 +20,7 @@ import dLogo from '../assets/d_logo.png';
 import redLogo from '../assets/red_logo.png';
 import treeBlackLogo from '../assets/treelogoblack.png';
 import treeWhiteLogo from '../assets/treelogowhite.png';
+import parchment from '../assets/parchment_bg.jpg';
 
 
 export default{
@@ -44,6 +45,7 @@ export default{
     dLogo,
     redLogo,
     treeBlackLogo,
-    treeWhiteLogo
+    treeWhiteLogo,
+    parchment
 };
 

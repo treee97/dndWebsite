@@ -1,0 +1,42 @@
+.app__monster_card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.app__monster_card li{
+    background:#f3dc90 url('../../assets/parchment_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* min-height: 200px; */
+    border-radius: 6px 30px;
+    padding: 8px 16px;
+
+}
+
+.app__monster_card-info{
+    font-style: italic;
+
+}
+
+.app__monster-card_dashline{
+    height: 2px;
+    width: 100%;
+    background: red;
+}
+
+.app__monster_card-stats{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.app__monster_card-stats div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

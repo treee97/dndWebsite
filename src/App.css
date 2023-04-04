@@ -47,45 +47,12 @@
 }
 
 
-.gradient_bg{
+.gradient__bg{
   background: radial-gradient(ellipse at 50% 43%, #FFFFFF 0%, #B1B1B1 100%);
-
-    /* radial-gradient(ellipse at 50% 43%, #FFFFFF 0%, #B1B1B1 100%) */
-    /* radial-gradient(ellipse at 50% 40%, rgba(19, 63, 3, 1) 0%, rgba(3, 50, 25, 1) 48%, rgba(0, 36, 16, 1) 100%) */
+  background-position: 90%;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
-/* 
-.gradient_bg2{
-  background:-moz-radial-gradient(circle at 50% 50%, rgba(90, 15, 0, 1) 5%, rgba(73, 12, 42, 1) 99%);
-  background:-webkit-radial-gradient(circle at 50% 50%, rgba(90, 15, 0, 1) 5%, rgba(73, 12, 42, 1) 99%);
-  background:-o-radial-gradient(circle at 50% 50%, rgba(90, 15, 0, 1) 5%, rgba(73, 12, 42, 1) 99%);
-  background:-ms-radial-gradient(circle at 50% 50%, rgba(90, 15, 0, 1) 5%, rgba(73, 12, 42, 1) 99%);
-  background:radial-gradient(circle at 50% 50%, rgba(90, 15, 0, 1) 5%, rgba(73, 12, 42, 1) 99%);
-} */
-
-  /* background:-moz-radial-gradient(ellipse at 50% 0%, rgba(97, 23, 23, 0.97) 10%, rgba(33, 7, 33, 1) 100%);
-  background:-webkit-radial-gradient(ellipse at 50% 0%, rgba(97, 23, 23, 0.97) 10%, rgba(33, 7, 33, 1) 100%);
-  background:-o-radial-gradient(ellipse at 50% 0%, rgba(97, 23, 23, 0.97) 10%, rgba(33, 7, 33, 1) 100%);
-  background:-ms-radial-gradient(ellipse at 50% 0%, rgba(97, 23, 23, 0.97) 10%, rgba(33, 7, 33, 1) 100%);
-  background:radial-gradient(ellipse at 50% 0%, rgba(97, 23, 23, 0.97) 10%, rgba(33, 7, 33, 1) 100%); */
-
-/* 
-{
-
-    background:-moz-radial-gradient(circle at 50% 50%, rgba(90, 15, 0, 1) 5%, rgba(73, 12, 42, 1) 99%);
-    background:-webkit-radial-gradient(circle at 50% 50%, rgba(90, 15, 0, 1) 5%, rgba(73, 12, 42, 1) 99%);
-    background:-o-radial-gradient(circle at 50% 50%, rgba(90, 15, 0, 1) 5%, rgba(73, 12, 42, 1) 99%);
-    background:-ms-radial-gradient(circle at 50% 50%, rgba(90, 15, 0, 1) 5%, rgba(73, 12, 42, 1) 99%);
-    background:radial-gradient(circle at 50% 50%, rgba(90, 15, 0, 1) 5%, rgba(73, 12, 42, 1) 99%);
-
-    
-    background:-moz-radial-gradient(ellipse at 50% 25%, rgba(24, 73, 6, 1) 0%, rgba(3, 56, 28, 1) 47%, rgba(0, 36, 16, 1) 100%);
-    background:-webkit-radial-gradient(ellipse at 50% 25%, rgba(24, 73, 6, 1) 0%, rgba(3, 56, 28, 1) 47%, rgba(0, 36, 16, 1) 100%);
-
-    background:-o-radial-gradient(ellipse at 50% 25%, rgba(24, 73, 6, 1) 0%, rgba(3, 56, 28, 1) 47%, rgba(0, 36, 16, 1) 100%);
-
-    background:-ms-radial-gradient(ellipse at 50% 25%, rgba(24, 73, 6, 1) 0%, rgba(3, 56, 28, 1) 47%, rgba(0, 36, 16, 1) 100%);
-
-} */
 
 /*  background-position: center;
   background-size: cover;
@@ -95,3 +62,5 @@
 /*  <a href="https://www.freepik.com/free-photo/solid-concrete-wall-textured-backdrop_17839221.htm#query=black%20texture&position=2&from_view=keyword&track=ais">Image by rawpixel.com</a> on Freepik  !!!!!!!!!!!!!!!!!______BG_ONE*/
 
 /* <a href="https://www.freepik.com/free-photo/clean-black-plaster_1038363.htm?query=black%20texture#from_view=detail_alsolike">Image by kues1</a> on Freepik */
+
+/* <a href="https://www.freepik.com/free-photo/vintage-grungy-textured-paper-background_15599867.htm#query=parchment&position=4&from_view=keyword&track=sph">Image by rawpixel.com</a> on Freepik */

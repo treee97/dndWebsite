@@ -3,7 +3,7 @@ import { Header, Character, Monsters, Spells, Trinkets} from './containers';
 import { Navbar, MonstersCall } from './components';
 const App = () => (
     <div>
-      <div className=' img__bg gradient__bg'>
+      <div className='img__bg'>
           <Navbar />
           <Header />
 			</div>
