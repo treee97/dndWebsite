@@ -4,6 +4,7 @@ import Monsters from './Monsters/Monsters';
 import Spells from './Spells/Spells';
 import Trinkets from './Trinkets/Trinkets';
 import Adventure from './Adventure/Adventure';
+import Footer from './Footer/Footer';
 
 
 export{
@@ -12,7 +13,8 @@ export{
     Character,
     Monsters,
     Spells,
-    Trinkets
+    Trinkets,
+    Footer
 }
 
 // more based way to do it => 

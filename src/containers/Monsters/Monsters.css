@@ -2,7 +2,18 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+
 }
-.app__monster-header{
-    margin-bottom: 2rem;
+.app__monster-header h2{
+    padding: 4rem;
+}
+.app__monster-header p{
+    padding: 1rem 4rem;
+}
+.app__monster-cards{
+    display: flex;
+    flex: 1;
+    margin: 4rem 2rem;
+    align-items: center;
 }

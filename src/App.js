@@ -1,5 +1,5 @@
 import './App.css';
-import { Header, Character, Monsters, Spells, Trinkets} from './containers';
+import { Header, Character, Monsters, Spells, Trinkets, Footer} from './containers';
 import { Navbar, MonstersCall } from './components';
 const App = () => (
     <div>
@@ -11,6 +11,7 @@ const App = () => (
       <Monsters/>
       <Spells/>
       <Trinkets/>
+      <Footer/>  
     </div>
 );
 
