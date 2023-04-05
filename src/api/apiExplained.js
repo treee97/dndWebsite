@@ -90,3 +90,28 @@ return(
 
 }
 
+// SI QUEREMOS ⁡⁣⁣⁢𝗟𝗟𝗔𝗠𝗔𝗥 𝗔 𝗠𝗔𝗦 𝗗𝗘 𝗨𝗡𝗔 𝗣𝗥𝗢𝗣𝗜𝗘𝗗𝗔𝗗 𝗗𝗘𝗡𝗧𝗥𝗢 𝗗𝗘𝗟 𝗢𝗕𝗝𝗘𝗧𝗢⁡ POR EJEMPLO DENTO DEL OBJECTO "sense" Y ADEMAS ⁡⁢⁢⁢𝘀𝗲𝗽𝗮𝗿𝗮𝗿 𝗲𝗹 𝘃𝗮𝗹𝗼𝗿 𝗱𝗲 𝗸𝗲𝘆 𝗰𝗼𝗻 𝗲𝘀𝗽𝗮𝗰𝗶𝗼⁡ si tiene una palabra junta como "passive_perception": 10, hacemos esto=>
+
+{monster.senses && (
+// comprobamos si monster.senses es un valor cierto. truthy. Real, que existe.
+  <p>
+    <span>Senses:</span> {Object.entries(monster.senses).map(([key, value]) => `${key.replace('_', ' ')} ${value}`).join(', ')}
+    {/* ⁡⁢⁣⁢𝗢𝗯𝗷𝗲𝗰𝘁.𝗲𝗻𝘁𝗿𝗶𝗲𝘀(𝗺𝗼𝗻𝘀𝘁𝗲𝗿.𝘀𝗲𝗻𝘀𝗲𝘀)⁡ 
+        devuelve un array de nombre y valor como por ejemplo 
+        [  
+          ["darkvision", "60 ft."],
+          ["passive_perception", 10]
+        ]
+
+    */}
+    {/* ⁡⁢⁣⁢.𝗺𝗮𝗽(([𝗸𝗲𝘆, 𝘃𝗮𝗹𝘂𝗲]) => ⁡ 
+        Esto mapea ⁡⁢⁣⁢cada⁡ [id, valor] array. 
+    */}
+    {/* ⁡⁢⁣⁢`${𝗸𝗲𝘆.𝗿𝗲𝗽𝗹𝗮𝗰𝗲('_', ' ')} ${𝘃𝗮𝗹𝘂𝗲}`)⁡
+        Esto es lo que devuelve el map. ⁡⁣⁣⁢Para cada array, la key y el value se devuelve en string⁡ ⁡⁣⁣⁢con un espacio en medio⁡. Ademas si el id tiene un guion bajo, este se suplantara con un espacio. Ej passive_perception: 10 => passive perception 10 
+    */}
+
+  </p>
+)}
+
+.map(([key, value]) => ${key} ${value}): This maps each [key, value] pair to a string that combines the key and value with a space in between.

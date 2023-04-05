@@ -21,6 +21,9 @@ import redLogo from '../assets/red_logo.png';
 import treeBlackLogo from '../assets/treelogoblack.png';
 import treeWhiteLogo from '../assets/treelogowhite.png';
 import parchment from '../assets/parchment_bg.jpg';
+import balorDemon from '../assets/balor_demon.png';
+import flameskull from '../assets/flameskull.png';
+import mimic from '../assets/mimic.png';
 
 
 export default{
@@ -46,6 +49,9 @@ export default{
     redLogo,
     treeBlackLogo,
     treeWhiteLogo,
-    parchment
+    parchment,
+    balorDemon,
+    flameskull,
+    mimic
 };
 

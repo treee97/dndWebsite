@@ -18,17 +18,23 @@ const MonstersCall = () => {
 
 
     return (
-          <ul className='app__monster_card'>
+          <div className='app__monster_card-items'>
             {monsters.map((monster) => (
-              <li key={monster.index}>
+
+              <div className='app__monster_card-item' key={monster.index}>
+                
                 <h2>{monster.name}</h2>
-                <p className='app__monster_card-info'>{monster.size} {monster.type}, {monster.alignment}</p>
-                <div className='app__monster-card_dashline'/>
-                <p>Armor Class:{monster.armor_class[0].value}</p>
-                <p>HitPoints: {monster.hit_points} ({monster.hit_points_roll})</p>
-                <p>speed: {monster.speed.walk}</p>
-                <div className='app__monster-card_dashline'/>
-                <div className="app__monster_card-stats">
+                
+                <p className='app__monster_card-item_info'>{monster.size} {monster.type}, {monster.alignment}</p>
+                <div className='app__monster-card-item_dashline'/>
+                
+                <p><span>Armor Class:</span> {monster.armor_class[0].value}</p>
+                <p><span>HitPoints:</span> {monster.hit_points} ({monster.hit_points_roll})</p>
+                <p><span>Speed:</span> {monster.speed.walk}</p>
+
+                <div className='app__monster-card-item_dashline'/>
+                
+                <div className="app__monster_card-item_stats">
                   <div>
                     <p>STR</p>
                     <p>{monster.strength}</p>
@@ -36,39 +42,48 @@ const MonstersCall = () => {
                   <div>
                     <p>DEX</p>
                     <p>{monster.dexterity}</p>
-                  </div><div>
+                  </div>
+                  <div>
                     <p>CON</p>
                     <p>{monster.constitution}</p>
-                  </div><div>
+                  </div>
+                  <div>
                     <p>INT</p>
                     <p>{monster.intelligence}</p>
-                  </div><div>
+                  </div>
+                  <div>
                     <p>WIS</p>
                     <p>{monster.wisdom}</p>
-                  </div><div>
+                  </div>
+                  <div>
                     <p>CHA</p>
                     <p>{monster.charisma}</p>
                   </div>
                 </div>
-                {/* <div className='app__monster-card_dashline'/> */}
 
-                {/* <div className="app__monster-img">
-                  <img src={`https://www.dnd5eapi.co${monster.image}`} alt="monster_image" />
-                  <p>{monster.image} eaaw</p>
-                </div>  There arent images for everyone*/}
-              </li>
+                <div className='app__monster_card-item_dashline'/>
+
+                <div className="app__monster_card-item_senses">
+
+                </div>
+                {/* {monster.damage_resistances && (
+                  <p><span>Damage Resistances:</span> {monster.damage_resistances.join(', ')}</p>
+                )} */}
+                {monster.senses && (
+                   <p>
+                     <span>Senses:</span> {Object.entries(monster.senses).map(([key, value]) => `${key.replace('_', ' ')} ${value}`).join(', ')}
+                   </p>
+                )}
+                </div>
             ))}
-          </ul>
+          </div>
       );
-      // name,
-      // size + type, alignment
-      // --------
-      // armor class
-      // hitpoints (hit_points_roll)
-      // speed:
-      // str dex cont int wis cha
-      // description.
-
+      
+      // {senses && Object.entries(senses).map(([key, value]) => (
+      //   <p key={key}>
+      //     <span>{key.replace(/_/g, ' ')}</span>: {value}
+      //   </p>
+      // ))}
 
 }
 

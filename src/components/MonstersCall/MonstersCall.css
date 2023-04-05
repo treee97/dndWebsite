@@ -1,40 +1,48 @@
-.app__monster_card{
+.app__monster_card-items{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    height: 50%;
+    gap: 1rem;
 }
-.app__monster_card li{
+.app__monster_card-item{
     background:#f3dc90 url('../../assets/parchment_bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
-    /* min-height: 200px; */
-    border-radius: 6px 30px;
-    padding: 8px 16px;
+    border-radius: 30px 6px;
+    padding: 12px 21px;
+    height: auto;
+
+    color: var(--color-charcoal-gray);
 
 }
+.app__monster_card-item h2{
+    font-family: var(--font);
+}
 
-.app__monster_card-info{
+
+ .app__monster_card-item_info{
     font-style: italic;
 
-}
+} 
 
-.app__monster-card_dashline{
+.app__monster-card-item_dashline{
     height: 2px;
     width: 100%;
-    background: red;
+    background: var(--color-burgundy);
+    margin: 8px;
 }
 
-.app__monster_card-stats{
+.app__monster_card-item_stats{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: space-evenly;
 }
-
-.app__monster_card-stats div{
+.app__monster_card-item_stats div{
     display: flex;
     flex-direction: column;
     align-items: center;
