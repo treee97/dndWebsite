@@ -64,16 +64,28 @@ const MonstersCall = () => {
                 <div className='app__monster_card-item_dashline'/>
 
                 <div className="app__monster_card-item_senses">
-
+                  {monster.senses && (
+                    <p>
+                      <span>Senses:</span> {Object.entries(monster.senses).map(([key, value]) => `${key.replace('_', ' ')} ${value}`).join(', ')}
+                    </p>
+                  )}
                 </div>
-                {/* {monster.damage_resistances && (
-                  <p><span>Damage Resistances:</span> {monster.damage_resistances.join(', ')}</p>
-                )} */}
-                {monster.senses && (
-                   <p>
-                     <span>Senses:</span> {Object.entries(monster.senses).map(([key, value]) => `${key.replace('_', ' ')} ${value}`).join(', ')}
-                   </p>
-                )}
+                <div className="app__monster_card-item_skills">
+               
+                </div>
+                {/* {monster.proficiencies && (
+                              <div>
+                                <span>Proficiencies:</span>
+                                <ul>
+                                  {monster.proficiencies.map((proficiency) => (
+                                    <li key={proficiency.proficiency.index}>
+                                      <span>{proficiency.proficiency.name}:</span> {proficiency.value}
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )} */}
+                
                 </div>
             ))}
           </div>

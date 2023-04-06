@@ -13,12 +13,17 @@
     background-position: center;
     background-size: cover;
 
+    max-width: 300px;
     border-radius: 30px 6px;
     padding: 12px 21px;
     height: auto;
 
     color: var(--color-charcoal-gray);
+    font-family: var(--font);
 
+}
+.app__monster_card-item p span{
+    font-weight: 600;
 }
 .app__monster_card-item h2{
     font-family: var(--font);
@@ -47,4 +52,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.app__monster_card-item_stats div p:first-child{
+    font-weight: 600;
 }
