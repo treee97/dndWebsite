@@ -1,11 +1,14 @@
 .app__monster_card-items{
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 1rem;
     align-items: center;
     justify-content: space-evenly;
-    height: 50%;
-    gap: 1rem;
+
+    height: 60%;
+    margin-top: 10rem;
 }
 .app__monster_card-item{
     background:#f3dc90 url('../../assets/parchment_bg.jpg');
@@ -14,13 +17,24 @@
     background-size: cover;
 
     max-width: 300px;
+    max-height: 330px;
+    overflow: hidden;
+
     border-radius: 30px 6px;
     padding: 12px 21px;
-    height: auto;
 
     color: var(--color-charcoal-gray);
     font-family: var(--font);
+    cursor: pointer;
 
+    transition: all 250ms;
+
+}
+
+
+.app__monster_card-item:hover{
+    max-height: 100%;
+    overflow: visible;
 }
 .app__monster_card-item p span{
     font-weight: 600;
@@ -35,7 +49,7 @@
 
 } 
 
-.app__monster-card-item_dashline{
+.app__monster_card-item_dashline{
     height: 2px;
     width: 100%;
     background: var(--color-burgundy);

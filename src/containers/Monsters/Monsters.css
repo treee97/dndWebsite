@@ -1,5 +1,5 @@
 .app__monster{
-    height: 100vh;
+    min-height: 100vh;
 
 }
 .app__monster-header{

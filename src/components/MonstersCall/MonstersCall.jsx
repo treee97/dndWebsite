@@ -26,13 +26,16 @@ const MonstersCall = () => {
                 <h2>{monster.name}</h2>
                 
                 <p className='app__monster_card-item_info'>{monster.size} {monster.type}, {monster.alignment}</p>
-                <div className='app__monster-card-item_dashline'/>
+                
+                <div className='app__monster_card-item_dashline'/>
+
                 
                 <p><span>Armor Class:</span> {monster.armor_class[0].value}</p>
                 <p><span>HitPoints:</span> {monster.hit_points} ({monster.hit_points_roll})</p>
                 <p><span>Speed:</span> {monster.speed.walk}</p>
 
-                <div className='app__monster-card-item_dashline'/>
+                <div className='app__monster_card-item_dashline'/>
+
                 
                 <div className="app__monster_card-item_stats">
                   <div>
@@ -63,6 +66,7 @@ const MonstersCall = () => {
 
                 <div className='app__monster_card-item_dashline'/>
 
+
                 <div className="app__monster_card-item_senses">
                   {monster.senses && (
                     <p>
@@ -70,21 +74,23 @@ const MonstersCall = () => {
                     </p>
                   )}
                 </div>
-                <div className="app__monster_card-item_skills">
-               
+                <div className="app__monster_card-item_challenge">
+                    <p>
+                      <span>Challenge: </span>
+                      {`${monster.challenge_rating} (${monster.xp} exp)`}
+                    </p>
                 </div>
-                {/* {monster.proficiencies && (
-                              <div>
-                                <span>Proficiencies:</span>
-                                <ul>
-                                  {monster.proficiencies.map((proficiency) => (
-                                    <li key={proficiency.proficiency.index}>
-                                      <span>{proficiency.proficiency.name}:</span> {proficiency.value}
-                                    </li>
-                                  ))}
-                                </ul>
-                              </div>
-                            )} */}
+
+                <div className='app__monster_card-item_dashline'/>
+
+
+                <div className="app__monster_card-item_action">
+                    <p>
+                      <span>{monster.actions[0].name}: </span>
+                      {monster.actions[0].desc}
+                    </p>
+                </div>
+                
                 
                 </div>
             ))}
@@ -96,6 +102,17 @@ const MonstersCall = () => {
       //     <span>{key.replace(/_/g, ' ')}</span>: {value}
       //   </p>
       // ))}
+
+      // {monster.proficiencies && (
+      //   <p>
+      //     <span>Skills:</span>
+      //       {monster.proficiencies.map((proficiency) => (
+      //         <p key={proficiency.proficiency.index}>
+      //           <span>{proficiency.proficiency.name.replace('')}:</span> {proficiency.value}
+      //         </p>
+      //       ))}
+      //   </p>
+      // )}
 
 }
 
