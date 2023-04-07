@@ -24,6 +24,7 @@ import parchment from '../assets/parchment_bg.jpg';
 import balorDemon from '../assets/balor_demon.png';
 import flameskull from '../assets/flameskull.png';
 import mimic from '../assets/mimic.png';
+import wizard from '../assets/wizard.png';
 
 
 export default{
@@ -52,6 +53,7 @@ export default{
     parchment,
     balorDemon,
     flameskull,
-    mimic
+    mimic,
+    wizard
 };
 

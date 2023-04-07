@@ -1,9 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './SpellCard.css';
+import { getSpells } from '../../api/SpellCall';
 
-// ATM this could be the only component that will call the api data unless we're planning on using more stuff like class data race data or whatever
-const SpellCard = () => (
-  <div>SpellCard</div>
-)
+const SpellCard = () => {
+  const [spell, setSpell] = useState([]);
+
+  useEffect(()=> {
+    const getRandomSpell = async () => {
+      const randomSpell = await getSpells();
+      setSpell(randomSpell)
+    }
+
+    getRandomSpell();
+  }, []);
+
+  return(
+    <div className="app__spell">
+
+    </div>
+  )
+
+
+
+
+
+
+
+}
 
 export default SpellCard

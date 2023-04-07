@@ -1,0 +1,14 @@
+.app__spell{
+    min-height: 100vh;
+}
+.app__spell_header p{
+    color: var(--color-white);
+    font-weight: 400;
+    text-align: left;
+    line-height: 30px;
+    font-size: 21px;
+}
+
+.app__spell_header-image{
+    mix-blend-mode: multiply;
+}
