@@ -20,6 +20,4 @@ export const getSpells = async () => {
     } catch (error) {
         console.log(error);
       }
-
-
 }

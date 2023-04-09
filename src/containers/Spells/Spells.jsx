@@ -12,8 +12,17 @@ const Spells = () => (
         <img src={images.wizard} alt="fire wizard" />
       </div>
     </div>
-
-    <SpellCard />
+    <div className="app__spell_cards">
+      <div className="app__spell__cards-container one">
+        <SpellCard />
+      </div>
+      <div className="app__spell__cards-container two">
+        <SpellCard />
+      </div>
+      <div className="app__spell__cards-container three">
+        <SpellCard />
+      </div>
+    </div>
   </div>
 )
 

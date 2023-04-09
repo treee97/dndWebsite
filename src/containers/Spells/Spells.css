@@ -1,5 +1,7 @@
 .app__spell{
     min-height: 100vh;
+    display: flex;
+    flex-direction: row;
 }
 .app__spell_header p{
     color: var(--color-white);
@@ -9,6 +11,3 @@
     font-size: 21px;
 }
 
-.app__spell_header-image{
-    mix-blend-mode: multiply;
-}
