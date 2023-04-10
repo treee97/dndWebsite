@@ -41,6 +41,23 @@ const SpellCard = () => {
                 }
               </div>
 
+              <div className="app__spellcard_item_duration">
+                {
+                  spell.concentration ? <p>Duration: Concentration - {spell.duration}</p> : <p>Duration: {spell.duration}</p>
+                }
+                <p>Components: {spell.components.join(" ")}</p>
+              </div>
+
+              <div className="app__spellcard_item_desc">
+                <p>{spell.desc}</p>
+              </div>
+
+              <div className="app__spellcard_item_classes">
+                  {spell.classes.map( (classItem) => (
+                    <p>{classItem.name}</p>
+                  ))}
+              </div>
+
             </div>
           </div>
         ))
