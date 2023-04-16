@@ -1,6 +1,6 @@
 # This is my work in progress website based on D&D
 
-Still learning and trying to get used to all the plain CSS. 
+Still learning and trying to get used to all the plain CSS. The page doesnt have any attractive atm because i spent most of the time getting the API to work fine.
 
 ## D&D API
 
