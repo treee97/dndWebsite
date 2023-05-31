@@ -40,7 +40,7 @@ return randomMonsters;
 }
 
 
-// ==================== COMPONENTE ===============================//
+// ==================== COMPONENTE (otro archivo) ===============================//
 import { useState, useEffect } from "react";
 import { getMonsters } from '../../api';
 // importamos la data necesaria si estamos utilizando un componente. Si lo queremos en un mismo archivo, ir a los comentarios de getMonsters en api/MonsterCall
@@ -114,4 +114,4 @@ return(
   </p>
 )}
 
-.map(([key, value]) => ${key} ${value}): This maps each [key, value] pair to a string that combines the key and value with a space in between.
+// .map(([key, value]) => ${key} ${value}): This maps each [key, value] pair to a string that combines the key and value with a space in between.
